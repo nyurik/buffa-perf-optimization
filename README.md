@@ -1,5 +1,7 @@
 # buffa packed repeated decode perf repro
 
+See https://github.com/anthropics/buffa/issues/171
+
 Minimal repro for allocation-heavy `buffa` view decoding of many small packed
 `repeated uint32` fields.  I see a drop from 9.3s to 7.6s -- a 22% improvement.
 
