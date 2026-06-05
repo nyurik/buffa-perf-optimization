@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package perf;
+
+message Tile {
+  repeated Feature features = 1;
+}
+
+message Feature {
+  repeated uint32 values = 1 [packed = true];
+}
